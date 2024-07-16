@@ -26,7 +26,14 @@ namespace Delegates
 
           _ok = Validator.Validate(lastName);
 
-          if(_ok) ListOfPeople.Add(lastName);
+          if (_ok)
+          {
+            ListOfPeople.Add(lastName);
+          }
+          else
+          {
+            Console.WriteLine("Введите корректные данные");
+          }
         }
       }
     }
